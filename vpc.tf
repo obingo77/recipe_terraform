@@ -1,5 +1,5 @@
 data "aws_availability_zones" "available" {
-  state  = "available"
+  state = "available"
   #names   = "opt-in-status"
   #values = [opt-in-not-required]
 
@@ -17,7 +17,7 @@ module "vpc" {
   single_nat_gateway   = false
   enable_dns_hostnames = true
   tags = {
-    Terraform   = "true"
+    Terraform = "true"
     # Environment = var.environment
   }
 }
