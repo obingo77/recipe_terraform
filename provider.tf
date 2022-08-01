@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 terraform {
   required_providers {
     aws = {
@@ -30,3 +31,21 @@ variable "environment" {
     default     = "dev"
   
 }
+=======
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+  }
+}
+
+
+provider "aws" {
+  region = "us-east-1"
+  #profile = "terraform"
+
+
+}
+>>>>>>> aa55691268ffdfb8d00930844341ee7e24c9483a
