@@ -43,9 +43,12 @@ jobs:
         run: terraform init
       - name: "terraform validate"
         run: terraform validate
-      - name: "terraform plan"
+      - name: "terraform issues"
+        run: tflint --error-with-issues
+      - name: tflint  
+        run: tflint --error-with-issues --deep
         
-      - name: "terraform apply"
+      
 
         
 

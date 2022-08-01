@@ -9,9 +9,7 @@ terraform {
 
 
 provider "aws" {
-    region = "us-east-1"
-    #profile = "terraform"
-
+  region = "us-east-1"
   
 }
 
