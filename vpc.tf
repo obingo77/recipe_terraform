@@ -1,5 +1,5 @@
 data "aws_availability_zones" "available" {
-  state  = "available"
+  state = "available"
   #names   = "opt-in-status"
   #values = [opt-in-not-required]
 

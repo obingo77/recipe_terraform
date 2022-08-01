@@ -10,7 +10,7 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
-  
+
 }
 
 terraform {
@@ -23,10 +23,10 @@ terraform {
   }
 }
 
-  
+
 variable "environment" {
-    type        = string
-    description = "environment to deploy to"
-    default     = "dev"
-  
+  type        = string
+  description = "environment to deploy to"
+  default     = "dev"
+
 }
